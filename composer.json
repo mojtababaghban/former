@@ -1,7 +1,7 @@
 {
-  "name": "anahkiasen/former",
+  "name": "mojtababaghban/former",
   "description": "A powerful form builder for the Laravel framework",
-  "homepage": "http://anahkiasen.github.com/former/",
+  "homepage": "http://mojtababaghban.github.com/former/",
   "license": "MIT",
   "keywords": [
     "bootstrap",
@@ -11,8 +11,8 @@
   ],
   "authors": [
     {
-      "name": "Maxime Fabre",
-      "email": "ehtnam6@gmail.com"
+      "name": "Mojtaba Baghban",
+      "email": "mojtaba.baghban@gmail.com"
     }
   ],
   "require": {
