@@ -108,10 +108,13 @@ class Group extends Tag
    */
   public function open()
   {
-    // If any errors, set state to errors
+    // If any errors, set state to errors else set state to success
     $errors = $this->former->getErrors();
-    if($errors) $this->state('error');
-
+    if($errors)
+      $this->state('error');
+    else
+      $this->state('success');
+    
     // Retrieve state and append it to classes
     if ($this->state) {
       $this->addClass($this->state);
