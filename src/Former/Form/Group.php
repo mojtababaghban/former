@@ -112,7 +112,7 @@ class Group extends Tag
     $errors = $this->former->getErrors();
     if($errors)
       $this->state('error');
-    else
+    elseif($this->former->field() and $this->former->field()->getValue() != null)
       $this->state('success');
     
     // Retrieve state and append it to classes
