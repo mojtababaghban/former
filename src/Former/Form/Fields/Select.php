@@ -66,6 +66,17 @@ class Select extends Field
     }
   }
 
+      /**
+   * Returns the Tag's content
+   *
+   * @return string
+   */
+  public function getContent()
+  {
+    return $this->renderChildren();
+  }
+  
+  
   /**
    * Renders the select
    *
@@ -98,8 +109,6 @@ class Select extends Field
     if ($placeholder = $this->getPlaceholder()) {
       array_unshift($this->children, $placeholder);
     }
-
-    $this->value = null;
 
     return parent::render();
   }
